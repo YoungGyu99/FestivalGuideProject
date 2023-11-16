@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인화면</title>
+    <link rel="stylesheet" href="/메인화면/CSS/styles.css">
+    <link rel="stylesheet" href="/메인화면/CSS/최종본.css">
+    <style>
+        /* 모달 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            width: 70%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .close-button {
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-button:hover {
+            color: #f00;
+        }
+
+        /* 게시물 작성 폼 스타일 */
+        #post-form {
+            text-align: center;
+        }
+
+        #post-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #post-title,
+        #post-content,
+        #post-file {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #post-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #post-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/메인화면/html/main.html">홈</a></li>
+                <li><a href="/메인화면/html/축제길잡이.html">축제길잡이</a></li> 
+                <li><a href="/메인화면/html/축제기획안.html">축제기획안</a></li>
+                <li><a href="/메인화면/html/기획안최종본.html">기획안최종본</a></li>
+                <li><a href="/메인화면/html/담당자연락처.html">담당자연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="board-search">
+        <div class="container">
+            <div class="search-window">
+                <form action="">
+                    <div class="search-wrap">
+                        <label for="search" class="blind">공지사항 내용 검색</label>
+                        <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                        <button type="submit" class="btn btn-dark">검색</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     
+    <!-- board list area -->
+    <div id="board-list">
+        <div class="container">
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="th-num">번호</th>
+                        <th scope="col" class="th-title">제목</th>
+                        <th scope="col" class="th-date">등록일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <th>
+                            <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                            <p>테스트</p>
+                        </th>
+                        <td>2023.09.14</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <th><a href="/사진/축제 기획서 양식.docx">[공지사항] 최종본 양식안내</a></th>
+                        <td>2023.09.14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <img id="img" src="/사진/문화체육관광부.png" width="200px" height="100px">
+    </div>
+    
+    <!-- 글쓰기 모달 창 -->
+    <div id="write-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>게시물 작성</h2>
+            <form id="post-form" action="#">
+                <label for="post-title">제목</label>
+                <input type="text" id="post-title" name="post-title" required>
+
+                <label for="post-content">내용</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+
+                <label for="post-file">파일 첨부</label>
+                <input type="file" id="post-file" name="post-file">
+
+                <button type="button" onclick="submitPost()">게시</button>
+            </form>
+        </div>
+    </div>
+    
+    <button id="write-button" onclick="openModal()">글쓰기</button>
+    
+    <script>
+        // 모달 창 열기
+        function openModal() {
+            var modal = document.getElementById("write-modal");
+            modal.style.display = "block";
+        }
+
+        // 모달 창 닫기
+        function closeModal() {
+            var modal = document.getElementById("write-modal");
+            modal.style.display = "none";
+        }
+
+        // 게시물 작성 폼 제출 처리
+        function submitPost() {
+            var postTitle = document.getElementById("post-title").value;
+            var postContent = document.getElementById("post-content").value;
+            
+            // 여기에 게시물을 서버로 보내는 코드를 추가하세요.
+            // 예를 들어, AJAX를 사용하여 서버에 데이터를 전송할 수 있습니다.
+            // 이 예제에서는 간단한 알림 메시지만 표시하고 모달 창을 닫습니다.
+            alert("게시물이 성공적으로 등록되었습니다.");
+            closeModal(); // 모달 창 닫기
+        }
+    </script>
+</body>
+</html>

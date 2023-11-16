@@ -1,0 +1,149 @@
+/* 전체 페이지 스타일링 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* 헤더 스타일링 */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 네비게이션 스타일링 */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* 메인 채팅 컨테이너 스타일링 */
+#chat-container {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto; /* 가운데로 정렬 */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 채팅 메시지 스타일링 */
+.message {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+/* 채팅 입력 및 전송 버튼 스타일링 */
+#user-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#user-input input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#user-input button {
+    border: none;
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+/* 통계 데이터 테이블 스타일 */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.stats-table th {
+    background-color: #f2f2f2;
+}
+.stats-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* 알림 섹션 스타일 */
+.media_title {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* 알림 섹션 타이틀 링크 스타일 */
+.media_title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 알림 목록 스타일 */
+.allimlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.allimlist li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* 알림 목록 링크 스타일 */
+.allimlist a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 알림 목록 링크 호버 스타일 */
+.allimlist a:hover {
+    color: #007bff;
+}
+
+/* "더보기" 링크 스타일 */
+.m_more a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* "더보기" 링크 호버 스타일 */
+.m_more a:hover {
+    text-decoration: underline;
+}

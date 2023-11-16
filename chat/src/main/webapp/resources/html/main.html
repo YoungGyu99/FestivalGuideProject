@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 화면</title>
+    <link rel="stylesheet" href="/메인화면/CSS/styles.css">
+	<style>
+        /* 스타일을 추가하여 로그인/로그아웃 버튼을 오른쪽 상단에 배치합니다. */
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/메인화면/html/main.html">홈</a></li>
+                <li><a href="/메인화면/html/축제길잡이.html">축제길잡이</a></li> 
+                <li><a href="/메인화면/html/축제기획안.html">축제기획안</a></li>
+                <li><a href="/메인화면/html/기획안최종본.html">기획안최종본</a></li>
+                <li><a href="/메인화면/html/담당자연락처.html">담당자연락처</a></li>
+            </ul>
+        </nav>
+		<div class="top-right">
+            <!-- 로그인 버튼과 로그아웃 버튼을 추가합니다. -->
+            <button id="logoutButton">로그아웃</button>
+        </div>
+    </header>
+<div class="media">
+					<h2 id="tab1m1" class="media_title"><a href="javascript:void(0);" class="on">알림</a></h2>
+					<!-- 알림세부리스트-->
+					<div id="tab1c1" class="allimlist" style="display: block;">
+						<ul>
+						
+							<li>
+								<span class="ndate">2023.09.06.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/noticeView.jsp?pSeq=17603" title="2023년 체육대회개최 유공 정부포상 후보자 공개검증">
+										
+										<span class="text">2023년 체육대회개최 유공 정부포상 후보자 공개검증</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.05.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/noticeView.jsp?pSeq=17601" title="2023년 문화영향평가 우수사례 및 아이디어 공모전">
+										
+										<span class="text">2023년 문화영향평가 우수사례 및 아이디어 공모전</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.05.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/noticeView.jsp?pSeq=17599" title="당인리 문화창작발전소 조성 건축공사 안전점검 수행기관 지정 공고">
+										
+										<span class="text">당인리 문화창작발전소 조성 건축공사 안전점검 수행기관 지정 공고</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.04.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/noticeView.jsp?pSeq=17594&pMenuCD=0301000000&pCurrentPage=1&pFlagJob=N&pTypeDept=&pSearchType=01&pSearchWord=" title="2023년 하반기 퇴직공무원(일반) 정부포상 추천후보자 공개검증">
+										
+										<span class="text">2023년 하반기 퇴직공무원(일반) 정부포상 추천후보자 공개검증</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.04.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/noticeView.jsp?pSeq=17599	" title="민간자격 등록폐지 공고">
+										
+										<span class="text">민간자격 등록폐지 공고</span>
+									</a>
+								</p>
+							</li>
+						
+						</ul>
+						
+					</div>
+
+					<form name="recruitFrm" method="post" target="hiddenPopFrame">
+						<input type="hidden" name="pSeq" value="">				
+						<input type="hidden" name="pAction" value="UPDATECNT">				
+					</form>
+					<div id="tab1c2" class="allimlist" style="display: none;">
+						<ul>
+						
+							<li>
+								<span class="ndate">2023.09.15.</span>
+								<p class="title">
+									<a href="https://www.mcst.go.kr/kor/s_notice/notice/jobView.jsp?pSeq=17616" title="2023년도 국립중앙박물관 어린이박물관과 기간제근로자(전시보조_휴직대체) 채용 최종합격자 공고 새 창 열림" target="_blank" onclick="updateCnt('http://www.museum.go.kr/site/main/archive/post/article_19296','11632');return false;">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">2023년도 국립중앙박물관 어린이박물관과 기간제근로자(전시보조_휴직대체) 채용 최종합격자 공고</span>
+										
+										<img class="ml5" src="/kor/images/common/new_window.png" alt="새 창 열림">
+										
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.15.</span>
+								<p class="title">
+									<a href="https://www.mmca.go.kr/pr/employmentDetail.do?menuId=01H000803000000&bdCId=202309140009011&searchBmCid=102';return false;">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">23년 3차 국립현대미술관 행정지원과 공무직 근로자 (영선 주임, 기계·방재·영선 기사, 청소원) 채용 변경 공고</span>
+										
+										<img class="ml5" src="https://www.mmca.go.kr/pr/employmentDetail.do?menuId=01H000803000000&bdCId=202309150009014&searchBmCid=102" alt="새 창 열림">
+										
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.15.</span>
+								<p class="title">
+									<a href="https://www.mmca.go.kr/pr/employmentDetail.do?menuId=01H000803000000&amp;bdCId=202309150009014&amp;searchBmCid=102" title="국립현대미술관 미술품수장센터 공무직근로자(전시운영보조)  서류전형 합격자 공고 새 창 열림" target="_blank" onclick="updateCnt('https://www.mmca.go.kr/pr/employmentDetail.do?menuId=01H000803000000&amp;bdCId=202309150009014&amp;searchBmCid=102','11633');return false;">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">국립현대미술관 미술품수장센터 공무직근로자(전시운영보조)  서류전형 합격자 공고</span>
+										
+										<img class="ml5" src="https://www.gugak.go.kr/site/program/board/basicboard/view?menuid=001005006006&boardtypeid=98&boardid=44880" alt="새 창 열림">
+										
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.14.</span>
+								<p class="title">
+									<a href="https://www.sports.or.kr/home/010210/0000/view.do?T_IDX=2424521" title="대한당구연맹 직원 채용 공고 새 창 열림" target="_blank" onclick="updateCnt('https://www.sports.or.kr/home/010210/0000/view.do?T_IDX=2424521','11629');return false;">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">대한당구연맹 직원 채용 공고</span>
+										
+										<img class="ml5" src="/kor/images/common/new_window.png" alt="새 창 열림">
+										
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.14.</span>
+								<p class="title">
+									<a href="https://www.gugak.go.kr/site/program/board/basicboard/view?menuid=001005006006&amp;boardtypeid=98&amp;boardid=44879" title="2023년 국립국악원 무대과 공무직 근로자 채용 관련 재공고 예정 안내 새 창 열림" target="_blank" onclick="updateCnt('https://www.gugak.go.kr/site/program/board/basicboard/view?menuid=001005006006&amp;boardtypeid=98&amp;boardid=44879','11630');return false;">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">2023년 국립국악원 무대과 공무직 근로자 채용 관련 재공고 예정 안내</span>
+										
+										<img class="ml5" src="/kor/images/common/new_window.png" alt="새 창 열림">
+										
+									</a>
+								</p>
+							</li>
+							
+						</ul>
+						<span class="m_more"><a href="/kor/s_notice/notice/jobList.jsp" title="채용정보 더보기"><img src="/kor/images/main/btn_main_more.png" alt="채용정보 더보기"></a></span>
+					</div>
+
+					<div id="tab1c3" class="allimlist" style="display:none;">
+						<ul>
+						
+							<li>
+								<span class="ndate">2023.09.15.</span>
+								<p class="title">
+									<a href="/kor/s_notice/notice/bidView.jsp?pSeq=11883" title="여주시청 대왕님표 여주쌀 TV-CF 및 라디오 광고영상물 제작">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">여주시청 대왕님표 여주쌀 TV-CF 및 라디오 광고영상물 제작</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.15.</span>
+								<p class="title">
+									<a href="/kor/s_notice/notice/bidView.jsp?pSeq=11881" title="2023 ACC 포커스《가이아의 도시》운송·설치 및 철수·반송 용역">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">2023 ACC 포커스《가이아의 도시》운송·설치 및 철수·반송 용역</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.14.</span>
+								<p class="title">
+									<a href="/kor/s_notice/notice/bidView.jsp?pSeq=11880" title="국립민속박물관 권역별 자유주제 민속조사보고서 발간(22년 내부과제)">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">국립민속박물관 권역별 자유주제 민속조사보고서 발간(22년 내부과제)</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.14.</span>
+								<p class="title">
+									<a href="/kor/s_notice/notice/bidView.jsp?pSeq=11879" title="2024년도 한국예술종합학교 정보시스템 운영 및 유지관리">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">2024년도 한국예술종합학교 정보시스템 운영 및 유지관리</span>
+									</a>
+								</p>
+							</li>
+						
+							<li>
+								<span class="ndate">2023.09.14.</span>
+								<p  class="title">
+									<a href="/kor/s_notice/notice/bidView.jsp?pSeq=11878" title="2024학년도 국립전통예술중학교 소규모 테마형 교육여행 위탁용역 입찰공고">
+										
+										<span class="mark_new"><em class="hidden" data-brl-use="PH/S">새글</em></span>
+										
+										<span class="text">2024학년도 국립전통예술중학교 소규모 테마형 교육여행 위탁용역 입찰공고</span>
+									</a>
+								</p>
+							</li>
+						
+						</ul>
+						
+					</div>
+					<!-- 입찰정보세부리스트//-->
+				</div>
+
+
+
+    
+    
+    <footer>
+        <div style="text-align: center; margin-top: 20px;">
+            <img id="img" src="/사진/문화체육관광부.png" width="200px" height="100px">
+        </div>
+        <p style="text-align: center;">&copy; 30119 세종특별자치시 갈매로 388 정부세종청사 15동
+            대표전화: 044-203-2000(월~금 09:00~18:00, 공휴일 제외)  팩스: 044-203-3447
+            Copyright ⓒ Ministry of Culture, Sports and Tourism</p>
+    </footer>
+	<script>
+        // JavaScript를 사용하여 로그인/로그아웃 기능을 구현합니다.
+        const logoutButton = document.getElementById("logoutButton");
+
+        // 로그아웃 버튼을 클릭했을 때 실행되는 함수
+        logoutButton.addEventListener("click", function() {
+            // 로그아웃 로직을 구현하세요.
+            alert("로그아웃 기능을 구현하세요.");
+        });
+    </script>
+
+
+
+</body>
+</html>
